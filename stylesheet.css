@@ -1,7 +1,15 @@
+body {
+background-color: #000000;
+    color:white;
+}
+
+
 #bClick:hover {
     background-color:red;
 }
 .jumbotron{
-background-color:#f0f0f0
-
+background-image: url('pdxskylinezoom.jpg');
+    background-repeat:no-repeat;
+    color:black;
+background-color: orange;
 }
