@@ -1,5 +1,5 @@
 $(document).ready(){};
-$('#bClick').click(){
+$('#bClick').onclick(function()){
 alert("you have clicked this button");
 }
 function timeServed()={
