@@ -19,17 +19,19 @@
     <div class='row'>
     <form role="form">
   <div class="form-group">
-      <div class='col-md-4'>
-    <label for="yearly">Yearly Salary from table:</label>
-    <input type="number" class="form-control" id="yearly">
+      <div class='col-md-3'>
+          <label for='stuff'>Enter Your Annual Wage</label>
+                     <input type="number" class="form-control" id='stuff' value = '40000'></input>
+
+         
   </div>
-      <div class='col-md-4'>
+      <div class='col-md-3'>
   <div class="form-group">
     <label for="hireDate">Hire Date</label>
     <input type="date" class="form-control" id="hireDate">
   </div>
       </div>
-      <div class='col-md-4'>
+      <div class='col-md-3'>
      <div class="form-group">
     <label for="classDate">Classification Date</label>
     <input type="date" class="form-control" id="classDate">
@@ -38,19 +40,54 @@
         <label>  <input type="checkbox">FTO/Preceptor</label>
   <label><input type="checkbox">Lead</label>
      </div>
-  <button type="button" class="btn btn-default" id='bClick'>Submit</button>
+  <button type="button" class="btn btn-default" id='fun'>Submit</button>
 </form>
     </div>
     </div>
     
 //row 2
         <div class='row'>
-        <div class='col-md-4'>
-            <h3>Hourly Wages</h3>
-            <h4 id='hr8'></h4>
-            <h4 id='hr10'></h4>
-            <h4 id='hr12'></h4>
-            <h4 id='hr24'></h4>
+        <div class='col-md-8'>
+            <table>
+    <tr>
+        <td>Hourly Rates</td>
+        <td>Base</td>
+        <td>Overtime</td>
+        <td>Hold Over</td>
+        <td>Premium OT</td>
+    </tr>
+    <tr>
+        <td id='label1'>8 Hour</td>
+        <td id='hr8r'>8</td>
+        <td id='hr8ot'>8</td>
+        <td id='hr8ho'>8</td>
+        <td id='hr8p'>8</td>
+    </tr>
+    <tr>
+        <td id='label2'>10 Hour</td>
+        <td id='hr10r'>8</td>
+        <td id='hr10ot'>8</td>
+        <td id='hr10ho'>8</td>
+        <td id='hr10p'>8</td>
+    </tr>
+    <tr>
+        <td id='label3'>12 Hour</td>
+        <td id='hr12r'>8</td>
+        <td id='hr12ot'>8</td>
+        <td id='hr12ho'>8</td>
+        <td id='hr12p'>8</td>
+    </tr>
+    <tr>
+        <td id='label3'>24 Hour</td>
+        <td id='hr24r'>8</td>
+        <td id='hr24ot'>8</td>
+        <td id='hr24ho'>8</td>
+        <td id='hr24p'>8</td>
+    </tr>
+            </table>           
+            
+            
+            
             </div>
         <div class='col-md-4'>
         <h2>Congratulations on surviving</h2> <h2 id='yearsOfService'></h2><h2>years in EMS!</h2>    
