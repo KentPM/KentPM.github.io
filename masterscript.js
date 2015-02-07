@@ -36,7 +36,7 @@ function welcome() {
         rates24[3] = rounder(rates24[0], 1, 2)
 
 
-        //aplies calculated rates to table
+
         var mod = ['r', 'ot', 'ho', 'p']
         for (t = 0; t < 4; t++) {
             $('#hr8' + mod[t]).text(st + totals[0][t]);
