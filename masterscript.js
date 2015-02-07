@@ -1,8 +1,8 @@
 $(document).ready(function () {
     welcome();
-    alert("These Calculation Are Rounded, Variances may occur")
 
-
+    
+  
 
 
 
@@ -13,7 +13,7 @@ function welcome() {
     $('#fun').click(function () {
         $('td').show('swing');
         st = '$';
-        
+        alert('Calculations are rounded and may vary from your wage slightly')
         
         var wage = $('#stuff').val();
         var ste = [2085.6, 2294.16, 2555, 3893.44];
@@ -67,3 +67,11 @@ function timeServed(){
     var today = new Date();
     var timeS = today - startTime;
     alert(timeS);}
+
+
+
+function isLead(){
+if($('#lead').prop(:'checked')==true){
+alert('your a lead?');
+}
+}
