@@ -13,8 +13,10 @@ function welcome() {
     $('#fun').click(function () {
         $('td').show('swing');
         st = '$';
-        alert('Calculations are rounded and may vary from your wage slightly')
+        alert('Calculations are rounded and may vary from your wage slightly');
         
+            
+        var difx = differential();
         var wage = $('#stuff').val();
         var ste = [2085.6, 2294.16, 2555, 3893.44];
 
@@ -25,15 +27,15 @@ function welcome() {
         var rates24 = [];
         var totals = [rates8, rates10, rates12, rates24];
         for (i = 0; i < 3; i++) {
-            rates8[i] = rounder(wage, ste[0], multi[i]);
-            rates10[i] = rounder(wage, ste[1], multi[i]);
-            rates12[i] = rounder(wage, ste[2], multi[i]);
-            rates24[i] = rounder(wage, ste[3], multi[i]);
+            rates8[i] = rounder1(wage, ste[0], multi[i]);
+            rates10[i] = rounder1(wage, ste[1], multi[i]);
+            rates12[i] = rounder1(wage, ste[2], multi[i]);
+            rates24[i] = rounder1(wage, ste[3], multi[i]);
         }
-        rates8[3] = rounder(rates8[0], 1, 1.5)
-        rates10[3] = rounder(rates10[0], 1, 1.65)
-        rates12[3] = rounder(rates12[0], 1, 1.75)
-        rates24[3] = rounder(rates24[0], 1, 2)
+        rates8[3] = rounder2(rates8[0], 1, 1.5)
+        rates10[3] = rounder2(rates10[0], 1, 1.65)
+        rates12[3] = rounder2(rates12[0], 1, 1.75)
+        rates24[3] = rounder2(rates24[0], 1, 2)
 
 
 
@@ -53,9 +55,25 @@ function welcome() {
             $('#hr24' + mod[t]).text(st + totals[3][t]);
         }
 
-        function rounder(w, s, m) {
-            return Math.floor((w / s * m) * 100) / 100;
+        function rounder1(w, s, m) {
+            return Math.floor(((w / s + difx)*m) * 100) / 100;
         }
+        function rounder2(w, s, m) {
+            return Math.floor(((w / s)*m) * 100) / 100;
+        }
+        
+       function differential() {
+     var ftoo = document.getElementById('fto').checked;
+     var leed = document.getElementById('lead').checked;
+      if (ftoo&&leed) {
+         return 1.85;
+     } else if (leed) {
+         return 0.7;
+     } else {
+         return 0;
+     }
+     
+ }  
 
     });
 }
@@ -69,5 +87,7 @@ function timeServed(){
     alert(timeS);}
 
 
-
+function check(){
+    
+}
 
