@@ -1,13 +1,14 @@
 <!doctype HTML 5>
 <HTML>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <script src='masterscript.js'></script>
 <link rel="stylesheet" href="stylesheet.css">
     </head>
 <body>
-    <div class='container'>
+    <div class='container-fluid'>
     <div class='jumbotron'>
     <h1>Calculate Your Earnings!</h1>
         </div>
@@ -15,7 +16,8 @@
         
     </div>
     
-    //first row of tables
+    
+   
     <div class='row'>
     <form role="form">
   <div class="form-group">
@@ -47,8 +49,8 @@
     
 //row 2
         <div class='row'>
-        <div class='col-md-8'>
-            <table>
+        <div class='col-md-6 col-xs-12'>
+            <table class='table-hover'>
     <tr>
         <td>Hourly Rates</td>
         <td>Base</td>
@@ -89,20 +91,11 @@
             
             
             </div>
-        <div class='col-md-4'>
+        <div class='col-md-4 co-xs-6'>
         <h2>Congratulations on surviving</h2> <h2 id='yearsOfService'></h2><h2>years in EMS!</h2>    
         </div>
         </div>
-   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-59524407-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+   
     
 </body>
 </HTML>

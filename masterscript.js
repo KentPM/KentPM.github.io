@@ -70,8 +70,4 @@ function timeServed(){
 
 
 
-function isLead(){
-if($('#lead').prop(:'checked')==true){
-alert('your a lead?');
-}
-}
+

@@ -9,9 +9,8 @@ background-color: #363400;
 }
 .jumbotron{
 background-image: url('lookout-mountain-hike-mount-hood-view.jpg');
-    backgound-position:75% 25%;
-    background-repeat:no-repeat;
-    color:black;
+    background-size: cover;
+    color:white;
 background-color:transparent;
     border-color:transparent;
 }
@@ -20,14 +19,14 @@ background-color:transparent;
     padding-left:20px;
 }
 
+
 td {
     display:none;
     padding:10px;
 }
 tr:hover {
-    background-color:gray;
-    color:white;
+    
+    color:black;
 }
-
 
 /*Background Color #363400 Dark Accent 2A2800 Dark Mid accent #464303 Mid Light accent #736E00 Light Accent #A8A200  http://paletton.com/#uid=11N0u0kJS6KvW5fuP8MNdeqCnl7 *
