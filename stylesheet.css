@@ -4,9 +4,6 @@ background-color: #363400;
 }
 
 
-#bClick:hover {
-    background-color:red;
-}
 .jumbotron{
 background-image: url('lookout-mountain-hike-mount-hood-view.jpg');
     background-size: cover;
@@ -14,19 +11,32 @@ background-image: url('lookout-mountain-hike-mount-hood-view.jpg');
 background-color:transparent;
     border-color:transparent;
 }
+.into {
+    background-color:#464303;
+    border-radius:1em;
+    padding: .5em;
+}
+.warn {
+    
+    font-size:1.2em;
+}
+.warn:hover {
+    background-color:#A8A200;
+}
 
 .row {
-    padding-left:20px;
+    /*padding-left:20px;*/
 }
 
 
 td {
     display:none;
     padding:10px;
+    
 }
 tr:hover {
     
     color:black;
 }
 
-/*Background Color #363400 Dark Accent 2A2800 Dark Mid accent #464303 Mid Light accent #736E00 Light Accent #A8A200  http://paletton.com/#uid=11N0u0kJS6KvW5fuP8MNdeqCnl7 *
+/*Background Color #363400 Dark Accent #2A2800 Dark Mid accent #464303 Mid Light accent #736E00 Light Accent #A8A200  http://paletton.com/#uid=11N0u0kJS6KvW5fuP8MNdeqCnl7 *

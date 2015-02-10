@@ -12,10 +12,9 @@ $(document).ready(function () {
 function welcome() {
     $('#fun').click(function () {
         $('td').show('swing');
+        $('.into').hide('swing');
         st = '$';
-        alert('Calculations are rounded and may vary from your wage slightly');
-        
-            
+                   
         var difx = differential();
         var wage = $('#stuff').val();
         var ste = [2085.6, 2294.16, 2555, 3893.44];
@@ -66,10 +65,14 @@ function welcome() {
      var ftoo = document.getElementById('fto').checked;
      var leed = document.getElementById('lead').checked;
       if (ftoo&&leed) {
+          $('#tos').text('FTO');
+          $('#lso').text('Lead');
          return 1.85;
      } else if (leed) {
+         $('#lso').text('Lead')
          return 0.7;
      } else {
+         $('#tos').text('None');
          return 0;
      }
      
