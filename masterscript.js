@@ -69,10 +69,12 @@ function welcome() {
           $('#lso').text('Lead');
          return 1.85;
      } else if (leed) {
-         $('#lso').text('Lead')
+         $('#lso').text('Lead');
+         $('#tos').text('');
          return 0.7;
      } else {
-         $('#tos').text('None');
+         $('#tos').text('');
+         $('#lso').text('');
          return 0;
      }
      
