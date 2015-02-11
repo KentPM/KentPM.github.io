@@ -16,7 +16,7 @@ function welcome() {
         st = '$';
                    
         var difx = differential();
-        var wage = $('#stuff').val();
+        var wage = parseInt($('#stuff').val());
         var ste = [2085.6, 2294.16, 2555, 3893.44];
 
         var multi = [1, 1.5, 0.5];
@@ -55,10 +55,10 @@ function welcome() {
         }
 
         function rounder1(w, s, m) {
-            return Math.floor(((w / s + difx)*m) * 100) / 100;
+            return Math.round(((w / s + difx)*m) * 100) / 100;
         }
         function rounder2(w, s, m) {
-            return Math.floor(((w / s)*m) * 100) / 100;
+            return Math.round(((w / s)*m) * 100) / 100;
         }
         
        function differential() {
