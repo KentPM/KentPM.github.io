@@ -1,8 +1,8 @@
 $(document).ready(function () {
-    welcome();
+    $('#fun').click(welcome);
 
-    
-  
+
+
 
 
 
@@ -10,13 +10,13 @@ $(document).ready(function () {
 
 
 function welcome() {
-    $('#fun').click(function () {
-        $('td').show('swing');
-        $('.into').hide('swing');
+
+        $('.tabhid').show('swing');
+        /*$('.into').hide('swing');*/
         st = '$';
-                   
+
         var difx = differential();
-        var wage = parseInt($('#stuff').val());
+        var wage = $('#stuff').val();
         var ste = [2085.6, 2294.16, 2555, 3893.44];
 
         var multi = [1, 1.5, 0.5];
@@ -60,7 +60,7 @@ function welcome() {
         function rounder2(w, s, m) {
             return Math.round(((w / s)*m) * 100) / 100;
         }
-        
+
        function differential() {
      var ftoo = document.getElementById('fto').checked;
      var leed = document.getElementById('lead').checked;
@@ -70,18 +70,17 @@ function welcome() {
          return 1.85;
      } else if (leed) {
          $('#lso').text('Lead');
-         $('#tos').text('');
+	$('#tos').text('');
          return 0.7;
      } else {
          $('#tos').text('');
-         $('#lso').text('');
+	$('#lso').text('');
          return 0;
      }
-     
- }  
 
-    });
-}
+ }
+
+    };
 
 
 
@@ -93,6 +92,5 @@ function timeServed(){
 
 
 function check(){
-    
-}
 
+}
