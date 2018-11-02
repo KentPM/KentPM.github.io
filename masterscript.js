@@ -67,11 +67,11 @@ function welcome() {
       if (ftoo&&leed) {
           $('#tos').text('FTO');
           $('#lso').text('Lead');
-         return 1.85;
+         return 2.15;
      } else if (leed) {
          $('#lso').text('Lead');
 	$('#tos').text('');
-         return 0.7;
+         return 1;
      } else {
          $('#tos').text('');
 	$('#lso').text('');
