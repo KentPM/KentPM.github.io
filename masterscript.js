@@ -67,12 +67,17 @@ function welcome() {
       if (ftoo&&leed) {
           $('#tos').text('FTO');
           $('#lso').text('Lead');
-         return 4;
+         return 6;
      } else if (leed) {
          $('#lso').text('Lead');
 	$('#tos').text('');
          return 2;
-     } else {
+     } 
+	else if (ftoo) {
+	$('#tos').text('FTO');
+	return 4;
+	}       
+	 else {
          $('#tos').text('');
 	$('#lso').text('');
          return 0;
