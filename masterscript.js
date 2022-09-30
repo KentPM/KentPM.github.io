@@ -75,6 +75,7 @@ function welcome() {
      } 
 	else if (ftoo) {
 	$('#tos').text('FTO');
+	$('#tos').text('');
 	return 4;
 	}       
 	 else {
