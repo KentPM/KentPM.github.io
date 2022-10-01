@@ -64,23 +64,102 @@ function welcome() {
        function differential() {
      var ftoo = document.getElementById('fto').checked;
      var leed = document.getElementById('lead').checked;
-      if (ftoo&&leed) {
+     var sup = document.getElementById('sup').checked;
+     var night = document.getElementById('night').checked;
+      if (ftoo&&leed&&night) {
           $('#tos').text('FTO');
           $('#lso').text('Lead');
-         return 6;
-     } else if (leed) {
+          $('#ngt').text('Night');
+          $('#pts').text('');
+
+         return 7;
+     }
+     
+     else if (leed&&night&&sup) {
          $('#lso').text('Lead');
-	$('#tos').text('');
-         return 2;
+         $('#ngt').text('Night');
+         $('#pts').text('Pt Sup');
+         $('#tos').text('');
+         return 6;
      } 
+     else if (leed&&sup) {
+         $('#lso').text('Lead');
+         $('#ngt').text('');
+         $('#pts').text('Pt Sup');
+         $('#tos').text('');
+         return 5;
+     }
+
+
+    else if (leed&&night) {
+         $('#lso').text('Lead');
+         $('#ngt').text('Night');
+	     $('#tos').text('');
+         return 3;
+     }
+      else if (night&&sup) {
+         $('#ngt').text('Night');
+         $('#pts').text('Pt Sup');
+         $('#tos').text('');
+         return 4;
+     }
+
+      else if (leed&&ftoo) {
+         $('#lso').text('Lead');
+         $('#tos').text('FTO');
+         $('#ngt').text('');
+         $('#pts').text('');
+        
+         
+         return 6;
+     }  
+     else if (ftoo&&night) {
+         $('#lso').text('');
+         $('#tos').text('FTO');
+         $('#ngt').text('Night');
+         $('#pts').text('');
+        
+         
+         return 5;
+     }  
+     else if (leed) {
+          $('#pts').text('');
+         $('#tos').text('');
+         $('#lso').text('Lead');
+         $('#ngt').text('');
+
+         return 2;
+     }
+      else if (sup) {
+         $('#pts').text('Pt Sup');
+         $('#tos').text('');
+         $('#lso').text('');
+         $('#ngt').text('');
+         
+         
+         return 3;
+     }
+     else if (night) {
+        $('#ngt').text('Night');
+         $('#tos').text('');
+         $('#lso').text('');
+         $('#pts').text('');
+        
+         return 1;
+     }
+
+
+
 	else if (ftoo) {
 	$('#tos').text('FTO');
-	$('#tos').text('');
+	
 	return 4;
 	}       
 	 else {
+        $('#lso').text('');
+         $('#ngt').text('');
+         $('#pts').text(' ');
          $('#tos').text('');
-	$('#lso').text('');
          return 0;
      }
 
